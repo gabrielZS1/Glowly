@@ -84,19 +84,19 @@ function Navbar() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mt-4 flex items-center justify-between rounded-2xl border border-[var(--glowly-border)] bg-white/60 backdrop-blur-xl px-5 py-3 shadow-[0_1px_0_rgba(0,0,0,0.03)]">
           <a
-  href="#top"
-  className="flex items-center gap-2 font-display font-extrabold text-lg tracking-tight text-[var(--glowly-black)]"
->
-  <span className="inline-flex h-8 w-8 items-center justify-center">
-  <img
-    src={logo}
-    alt="Logo Glowly"
-    className="h-8 w-8 rounded-xl object-cover"
-  />
-</span>
+            href="#top"
+            className="flex items-center gap-2 font-display font-extrabold text-lg tracking-tight text-[var(--glowly-black)]"
+          >
+            <span className="inline-flex h-8 w-8 items-center justify-center">
+              <img
+                src={logo}
+                alt="Logo Glowly"
+                className="h-8 w-8 rounded-xl object-cover"
+              />
+            </span>
 
-  Glowly
-</a>
+            Glowly
+          </a>
 
           <nav className="hidden md:flex items-center gap-8 font-body text-sm font-medium text-[var(--glowly-black)]/70">
             {links.map((l) => (
@@ -424,9 +424,8 @@ function Parceiros() {
               whileInView="show"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeUp}
-              className={`relative rounded-3xl p-8 flex flex-col ${
-                p.highlight ? "bg-white border-2 border-[var(--glowly-yellow)]" : "bg-white/5 border border-white/10"
-              }`}
+              className={`relative rounded-3xl p-8 flex flex-col ${p.highlight ? "bg-white border-2 border-[var(--glowly-yellow)]" : "bg-white/5 border border-white/10"
+                }`}
             >
               {p.highlight && (
                 <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 rounded-full bg-[var(--glowly-yellow)] px-3.5 py-1 font-body text-[11px] font-bold text-[var(--glowly-black)]">
@@ -452,11 +451,10 @@ function Parceiros() {
                 href={p.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3.5 font-body text-sm font-semibold transition-colors ${
-                  p.highlight
-                    ? "bg-[var(--glowly-black)] text-white hover:bg-[var(--glowly-black)]/85"
-                    : "bg-[var(--glowly-yellow)] text-[var(--glowly-black)] hover:bg-[var(--glowly-yellow-soft)]"
-                }`}
+                className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3.5 font-body text-sm font-semibold transition-colors ${p.highlight
+                  ? "bg-[var(--glowly-black)] text-white hover:bg-[var(--glowly-black)]/85"
+                  : "bg-[var(--glowly-yellow)] text-[var(--glowly-black)] hover:bg-[var(--glowly-yellow-soft)]"
+                  }`}
               >
                 {p.cta}
               </a>
@@ -518,7 +516,6 @@ function Depoimentos() {
             </motion.div>
           ))}
         </div>
-        <p className="font-body text-xs text-[var(--glowly-ink)]/60 mt-8 text-center">Depoimentos ilustrativos para fins de demonstração.</p>
       </div>
     </section>
   );
@@ -616,16 +613,20 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10 pb-10 border-b border-white/10">
           <a href="#top" className="flex items-center gap-2 font-display font-extrabold text-lg text-white">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-[var(--glowly-yellow)]">
-              <Sparkles className="h-4 w-4 text-[var(--glowly-black)]" strokeWidth={2.5} />
+            <span className="inline-flex h-8 w-8 items-center justify-center">
+              <img
+                src={logo}
+                alt="Logo Glowly"
+                className="h-8 w-8 rounded-xl object-cover"
+              />
             </span>
             Glowly
           </a>
 
           <div className="flex flex-wrap gap-x-10 gap-y-4 font-body text-sm text-white/60">
-        
+
             <a href="mailto:contato@glowly.com" className="flex items-center gap-2 hover:text-[var(--glowly-yellow)] transition-colors">
-              <Mail className="h-4 w-4" /> contato@glowly.com
+              <Mail className="h-4 w-4" /> glowlyapp2701@gmail.com
             </a>
             <a href="#" className="hover:text-[var(--glowly-yellow)] transition-colors">Política de Privacidade</a>
             <a href="#" className="hover:text-[var(--glowly-yellow)] transition-colors">Termos de Uso</a>
