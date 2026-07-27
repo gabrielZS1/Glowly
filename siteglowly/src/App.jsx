@@ -373,18 +373,20 @@ function Parceiros() {
   const plans = [
     {
       name: "Parceiro Fundador",
-      price: "R$ 20",
+      price: "R$ 19",
       period: "pagamento único",
       features: ["Acesso ao grupo exclusivo", "3 meses gratuitos após o lançamento", "Prioridade no cadastro", "Benefícios exclusivos"],
       cta: "Quero participar",
+      link: "https://pay.cakto.com.br/7ogy87g_1005440",
       highlight: false,
     },
     {
       name: "Fundador Premium",
-      price: "R$ 50",
+      price: "R$ 49",
       period: "pagamento único",
       features: ["Tudo do plano anterior", "6 meses gratuitos", "Destaque na plataforma durante o lançamento", "Benefícios exclusivos"],
       cta: "Quero ser Premium",
+      link: "https://pay.cakto.com.br/wk867db",
       highlight: true,
     },
   ];
@@ -438,7 +440,9 @@ function Parceiros() {
               </ul>
 
               <a
-                href="#cta-final"
+                href={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`mt-8 inline-flex items-center justify-center rounded-full px-6 py-3.5 font-body text-sm font-semibold transition-colors ${
                   p.highlight
                     ? "bg-[var(--glowly-black)] text-white hover:bg-[var(--glowly-black)]/85"
@@ -580,7 +584,7 @@ function CTAFinal() {
             Entre para os Primeiros Parceiros da Glowly e participe da construção da plataforma desde o início.
           </p>
           <a
-            href="https://SEULINK.com"
+            href="https://pay.cakto.com.br/7ogy87g_1005440"
             target="_blank"
             rel="noopener noreferrer"
             className="relative mt-10 inline-flex items-center gap-2 rounded-full bg-[var(--glowly-yellow)] px-9 py-4 font-body text-sm sm:text-base font-bold text-[var(--glowly-black)] glow-ring"
