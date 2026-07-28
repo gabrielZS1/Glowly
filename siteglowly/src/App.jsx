@@ -25,7 +25,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-const logo = "../public/logoglowly.jpg";
+const logo = "/logoglowly.jpg";
 
 /* ------------------------------------------------------------------ */
 /*  Design tokens (see brief: amarelo #F6C344 / preto #0D0D0D / branco)*/
@@ -152,7 +152,7 @@ function Navbar() {
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
               <img
-                src={logo || "/placeholder.svg"}
+                src={logo}
                 alt="Logo Glowly"
                 className="h-8 w-8 rounded-xl object-cover"
               />
@@ -283,7 +283,7 @@ function PhoneMockup() {
               </p>
               <p className="font-display text-lg font-bold text-[var(--glowly-black)]">
                 Encontre seu profissional
-              </p>
+              </p> 
             </div>
 
             {/* search pill */}
@@ -1002,7 +1002,7 @@ function Footer() {
           >
             <span className="inline-flex h-8 w-8 items-center justify-center">
               <img
-                src={logo || "/placeholder.svg"}
+                src={logo}
                 alt="Logo Glowly"
                 className="h-8 w-8 rounded-xl object-cover"
               />
