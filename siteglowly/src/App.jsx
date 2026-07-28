@@ -279,7 +279,7 @@ function PhoneMockup() {
             {/* app header */}
             <div className="px-6 pt-2 pb-4">
               <p className="font-body text-xs text-[var(--glowly-ink)]">
-                Bom dia ✨
+                Bom dia, Cliente ✨
               </p>
               <p className="font-display text-lg font-bold text-[var(--glowly-black)]">
                 Encontre seu profissional
