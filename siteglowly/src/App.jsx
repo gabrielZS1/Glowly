@@ -628,20 +628,20 @@ function Parceiros() {
   const plans = [
     {
       name: "Parceiro Fundador",
-      price: "R$ 19",
+      price: "R$ 24,99",
       period: "pagamento único",
-      features: ["Acesso ao grupo exclusivo", "3 meses gratuitos após o lançamento", "Prioridade no cadastro", "Benefícios exclusivos"],
+      features: ["Acesso ao grupo exclusivo", "15 dias gratuitos após o lançamento", "Prioridade no cadastro", "Benefícios exclusivos"],
       cta: "Quero participar",
       link: "https://pay.cakto.com.br/7ogy87g_1005440",
       highlight: false,
     },
     {
       name: "Fundador Premium",
-      price: "R$ 49",
+      price: "R$ 49,79",
       period: "pagamento único",
-      features: ["Tudo do plano anterior", "6 meses gratuitos", "Destaque na plataforma durante o lançamento", "Benefícios exclusivos"],
+      features: ["Tudo do plano anterior", "30 dias gratuitos após o lançamento", "Destaque na plataforma durante o lançamento", "Benefícios exclusivos"],
       cta: "Quero ser Premium",
-      link: "https://pay.cakto.com.br/wk867db",
+      link: "https://pay.cakto.com.br/sxp5dgy_1072545",
       highlight: true,
     },
   ];
