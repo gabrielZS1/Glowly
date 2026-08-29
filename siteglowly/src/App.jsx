@@ -866,7 +866,7 @@ function Depoimentos() {
 function FAQ() {
   const faqs = [
     { q: "Quando a Glowly será lançada?", a: "Estamos com o lançamento oficial previsto para 2026. Os Primeiros Parceiros terão acesso prioritário assim que a plataforma abrir." },
-    { q: "Como funciona o período gratuito?", a: "Ao entrar no programa de Primeiros Parceiros, você garante meses gratuitos de uso assim que a Glowly for lançada, de acordo com o plano escolhido." },
+    { q: "Como funciona o período gratuito?", a: "Ao entrar no programa de Primeiros Parceiros, você garante dias gratuitos de uso assim que a Glowly for lançada, de acordo com o plano escolhido." },
     { q: "Posso cancelar quando quiser?", a: "Sim. Não há fidelidade obrigatória — você pode cancelar sua participação a qualquer momento." },
     { q: "Como funciona a assinatura?", a: "O valor de entrada no programa é único e garante seu lugar entre os Primeiros Parceiros, com os benefícios do plano escolhido aplicados no lançamento." },
     { q: "Meu estabelecimento aparecerá para clientes da minha cidade?", a: "Sim. A busca da Glowly prioriza estabelecimentos próximos ao cliente, aumentando a visibilidade do seu negócio na sua região." },
@@ -972,7 +972,7 @@ function CTAFinal() {
             da plataforma desde o início.
           </p>
           <motion.a
-            href="https://pay.cakto.com.br/7ogy87g_1005440"
+            href="#parceiros"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
