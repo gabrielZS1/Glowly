@@ -31,8 +31,6 @@ const logo = "/logoglowly.jpg";
 /*  Design tokens (see brief: amarelo #F6C344 / preto #0D0D0D / branco)*/
 /* ------------------------------------------------------------------ */
 const FONT_IMPORT = `
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
-
 :root{
   --glowly-yellow:#F6C344;
   --glowly-yellow-soft:#FCE3A6;
@@ -873,8 +871,23 @@ function FAQ() {
   ];
   const [open, setOpen] = useState(0);
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <section id="faq" className="py-24 lg:py-32 bg-[var(--glowly-bg)]">
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="mx-auto max-w-3xl px-6 lg:px-10">
         <motion.div
           initial="hidden"
