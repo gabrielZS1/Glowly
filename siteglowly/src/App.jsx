@@ -1018,13 +1018,17 @@ function Footer() {
               <Mail className="h-4 w-4" /> glowlyapp2701@gmail.com
             </a>
             <a
-              href="#"
+              href="/legal/privacidade.html"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-[var(--glowly-yellow)] transition-colors"
             >
               Política de Privacidade
             </a>
             <a
-              href="#"
+              href="/legal/termos.html"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-[var(--glowly-yellow)] transition-colors"
             >
               Termos de Uso
