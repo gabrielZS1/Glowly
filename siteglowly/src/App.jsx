@@ -626,7 +626,7 @@ function Parceiros() {
   const plans = [
     {
       name: "Parceiro Fundador",
-      price: "R$ 24,99",
+      price: "R$ 79,40",
       period: "pagamento único",
       features: ["Acesso ao grupo exclusivo", "15 dias gratuitos após o lançamento", "Prioridade no cadastro", "Benefícios exclusivos"],
       cta: "Quero participar",
@@ -635,7 +635,7 @@ function Parceiros() {
     },
     {
       name: "Fundador Premium",
-      price: "R$ 49,79",
+      price: "R$ 99,79",
       period: "pagamento único",
       features: ["Tudo do plano anterior", "30 dias gratuitos após o lançamento", "Destaque na plataforma durante o lançamento", "Benefícios exclusivos"],
       cta: "Quero ser Premium",
