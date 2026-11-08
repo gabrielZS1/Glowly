@@ -23,6 +23,7 @@ import {
   Menu,
   X,
   Sparkles,
+  FileText,
 } from "lucide-react";
 
 const logo = "/logoglowly.jpg";
@@ -758,6 +759,18 @@ function Parceiros() {
             </motion.div>
           ))}
         </div>
+
+        <div className="mt-12 text-center">
+          <a
+            href="/apresentacao.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 font-body text-sm font-semibold text-white/80 hover:text-[var(--glowly-yellow)] hover:border-[var(--glowly-yellow)]/60 transition-colors"
+          >
+            <FileText className="h-4 w-4" />
+            Ver a apresentação completa (PDF)
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -1031,6 +1044,14 @@ function Footer() {
               className="flex items-center gap-2 hover:text-[var(--glowly-yellow)] transition-colors"
             >
               <Mail className="h-4 w-4" /> glowlyapp2701@gmail.com
+            </a>
+            <a
+              href="/apresentacao.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-[var(--glowly-yellow)] transition-colors"
+            >
+              <FileText className="h-4 w-4" /> Apresentação (PDF)
             </a>
             <a
               href="/legal/privacidade.html"
