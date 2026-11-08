@@ -178,7 +178,7 @@ function Navbar() {
               whileTap={{ scale: 0.96 }}
               className="font-body inline-flex items-center gap-1.5 rounded-full bg-[var(--glowly-yellow)] px-5 py-2.5 text-sm font-semibold text-[var(--glowly-black)] glow-ring"
             >
-              Primeiros Parceiros
+              Parceiros Fundadores
             </motion.a>
           </div>
 
@@ -233,7 +233,7 @@ function Navbar() {
                   onClick={() => setOpen(false)}
                   className="mt-2 inline-flex items-center justify-center rounded-full bg-[var(--glowly-yellow)] px-5 py-3 text-sm font-semibold text-[var(--glowly-black)]"
                 >
-                  Primeiros Parceiros
+                  Parceiros Fundadores
                 </motion.a>
               </motion.div>
             </motion.div>
@@ -375,7 +375,7 @@ function Hero() {
               animate={{ scale: [1, 1.6, 1], opacity: [1, 0.6, 1] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             />
-            Programa de Primeiros Parceiros aberto
+            Programa de Parceiros Fundadores aberto
           </motion.span>
 
           <motion.h1
@@ -426,7 +426,7 @@ function Hero() {
               whileTap={{ scale: 0.97 }}
               className="group font-body inline-flex items-center justify-center gap-2 rounded-full bg-[var(--glowly-yellow)] px-7 py-4 text-sm font-semibold text-[var(--glowly-black)] glow-ring"
             >
-              Fazer parte dos Primeiros Parceiros
+              Fazer parte dos Parceiros Fundadores
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </motion.a>
             <motion.a
@@ -628,7 +628,7 @@ function Parceiros() {
       name: "Parceiro Fundador",
       price: "R$ 79,40",
       period: "pagamento único",
-      features: ["Acesso ao grupo exclusivo", "15 dias gratuitos após o lançamento", "Prioridade no cadastro", "Benefícios exclusivos"],
+      features: ["Acesso ao grupo exclusivo", "8 meses grátis após o lançamento", "Prioridade no cadastro", "Benefícios exclusivos"],
       cta: "Quero participar",
       link: "https://pay.cakto.com.br/7ogy87g_1005440",
       highlight: false,
@@ -637,7 +637,7 @@ function Parceiros() {
       name: "Fundador Premium",
       price: "R$ 99,79",
       period: "pagamento único",
-      features: ["Tudo do plano anterior", "30 dias gratuitos após o lançamento", "Destaque na plataforma durante o lançamento", "Benefícios exclusivos"],
+      features: ["Tudo do plano anterior", "12 meses grátis após o lançamento", "Destaque na plataforma durante o lançamento", "Benefícios exclusivos"],
       cta: "Quero ser Premium",
       link: "https://pay.cakto.com.br/sxp5dgy_1072545",
       highlight: true,
@@ -662,7 +662,7 @@ function Parceiros() {
             Lançamento
           </span>
           <h2 className="font-display mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-            Faça parte dos Primeiros Parceiros da Glowly
+            Faça parte dos Parceiros Fundadores da Glowly
           </h2>
           <p className="font-body mt-4 text-sm sm:text-base text-white/60 leading-relaxed">
             Estamos selecionando estabelecimentos para participar do lançamento
@@ -863,11 +863,13 @@ function Depoimentos() {
 /* ------------------------------------------------------------------ */
 function FAQ() {
   const faqs = [
-    { q: "Quando a Glowly será lançada?", a: "Estamos com o lançamento oficial previsto para 2026. Os Primeiros Parceiros terão acesso prioritário assim que a plataforma abrir." },
-    { q: "Como funciona o período gratuito?", a: "Ao entrar no programa de Primeiros Parceiros, você garante dias gratuitos de uso assim que a Glowly for lançada, de acordo com o plano escolhido." },
-    { q: "Posso cancelar quando quiser?", a: "Sim. Não há fidelidade obrigatória — você pode cancelar sua participação a qualquer momento." },
-    { q: "Como funciona a assinatura?", a: "O valor de entrada no programa é único e garante seu lugar entre os Primeiros Parceiros, com os benefícios do plano escolhido aplicados no lançamento." },
+    { q: "Quando a Glowly será lançada?", a: "O lançamento oficial está em preparação. Os Parceiros Fundadores são avisados primeiro e têm acesso prioritário assim que a plataforma abrir." },
+    { q: "Como funciona o período grátis?", a: "Ele começa a contar no lançamento: 8 meses no Parceiro Fundador e 12 meses no Fundador Premium." },
+    { q: "O pagamento de fundador é mensal?", a: "Não. É um pagamento único, sem mensalidade durante o período grátis do plano escolhido." },
+    { q: "E depois do período grátis?", a: "Você escolhe se quer continuar em um dos planos mensais, calculados pelo tamanho da sua equipe: a partir de R$ 10 por mês." },
+    { q: "Posso cancelar quando quiser?", a: "Sim. Não há fidelidade obrigatória — você pode cancelar a qualquer momento." },
     { q: "Meu estabelecimento aparecerá para clientes da minha cidade?", a: "Sim. A busca da Glowly prioriza estabelecimentos próximos ao cliente, aumentando a visibilidade do seu negócio na sua região." },
+    { q: "Para onde vai o valor dos fundadores?", a: "Direto para o desenvolvimento da plataforma: novos recursos, melhorias e tudo o que for preciso para entregar um app cada vez melhor." },
   ];
   const [open, setOpen] = useState(0);
 
@@ -885,7 +887,7 @@ function FAQ() {
     <section id="faq" className="py-24 lg:py-32 bg-[var(--glowly-bg)]">
       <script
         type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
+        
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div className="mx-auto max-w-3xl px-6 lg:px-10">
@@ -981,7 +983,7 @@ function CTAFinal() {
             Seu estabelecimento merece estar onde os clientes procuram.
           </h2>
           <p className="relative font-body mt-6 text-sm sm:text-base text-white/60 max-w-xl mx-auto leading-relaxed">
-            Entre para os Primeiros Parceiros da Glowly e participe da construção
+            Entre para os Parceiros Fundadores da Glowly e participe da construção
             da plataforma desde o início.
           </p>
           <motion.a
